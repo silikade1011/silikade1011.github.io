@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Junicode-Regular';
+    src: url(fonts/Junicode-Regular.ttf) format(ttf),
+}
+
 html {
 	padding: 0;
 }

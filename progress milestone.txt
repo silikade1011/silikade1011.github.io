@@ -1,0 +1,9 @@
+Progress:
+March 16:
+Milestone 0 (very early testing): creation of page, implementation of style and font
+Milestone 1(.0): Spelling reform
+March 17:
+Milestone 1.1: Explanation of spelling reform
+Milestone 1.2, 1.3: Cooked English and catalogue of ESRs found on internet
+March 18:
+Milestone 2.0: creation of interchange system

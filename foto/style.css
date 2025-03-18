@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Junicode-Regular";
+    src: url(Junicode-Regular.ttf);
+}
+
+html {
+		font-family: "Junicode-Regular";
+	padding: 0;
+}
+h1 {
+	text-align: center;
+	font-size: 36px
+}
+
+h2 {
+	text-align: center;
+	font-size: 28px
+}
+
+h3 {
+	font-size: 20px
+}
+
+body {
+	padding: 0;
+	background-color: black;
+	color: white;
+	margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+table, th, td {
+	border: 1px solid #FFFFFF;
+  }

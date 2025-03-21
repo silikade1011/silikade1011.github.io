@@ -9,4 +9,6 @@ March 18:
 Milestone 2.0: creation of interchange system
 Milestone 2.1: hidden sounds + folder structure established
 Milestone 2.2: setting down what to include in the webpage
+March 21:
 Milestone 2.3: reduced some goals, finished bases
+Milestone 2.4: finished the rest of math work

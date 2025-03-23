@@ -17,3 +17,4 @@ Beta 1: Chemistry cooking + postponed fantasy section to another update in April
 Beta 2: Full chemistry completion, so the site is ready to post.
 March 23:
 Pre-release 1: site fixes and simplification of text
+Pre-release 2: more simplifications

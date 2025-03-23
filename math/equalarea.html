@@ -22,14 +22,13 @@
 	<h2>solving the original problem</h2>
 	<h3><u>1. Splitting and setting variable</u></h3>
 	<p>We split the original triangle in half down the 40 side, giving us 2 triangles of [20, 21, 29]. (21 is derived from the Pythagorean theorem, aka the height.)</p>
-	<p>The area of the entire triangle is 420 (units sq.), and the perimeter is 98.</p>
-	<p>Suppose we have another isosceles triangles of that same area and perimeter. That means we can divide it into 2 right-angled triangles too.</p>
-	<p>In that case, let the side lengths of each <i>right-angled</i> triangle be a, b and √(a^2 + b^2) (without loss of generality, we let 2a be one of the sides of the larger isosceles triangle, aka it has side lengths 2a, √(a^2 + b^2), √(a^2 + b^2))</p>
-	<h3><u>2. Seeting up equations</u></h3>
+	<p>The area (A) of the whole triangle is 420 (units sq.), and the perimeter (P) is 98.</p>
+	<p>Suppose we have another isosceles triangles of that same A and P. That means we can divide it into 2 right-angled triangles too.</p>
+	<p>Let the side lengths be [a, b, √(a^2 + b^2)] (without loss of generality, we let 2a be one of the sides of the larger isosceles triangle, aka it has side lengths 2a, √(a^2 + b^2), √(a^2 + b^2))</p>
+	<h3><u>2. Setting up equations</u></h3>
 	<p>We have:</p>
-	<p>ab = 420, re-writing it as <b>a = 420/b (eq1)</b></p>
-	<p>2a + 2√(a^2 + b^2) = 98, aka a + √(a^2 + b^2) = 49 (eq2)</p>
-	<p>Making a the subject:</p>
+	<p>ab = 420, aka a = 420/b</p>
+	<p>2a + 2√(a^2 + b^2) = 98, aka a + √(a^2 + b^2) = 49, which can be re-written:</p>
 	<p>√(a^2 + b^2) = 49 - a</p>
 	<p>a^2 + b^2 = a^2 - 98a + 2401</p>
 	<p>b^2 = 2401 - 98a</p>
@@ -38,23 +37,18 @@
 	<p>b^2 = 2401 - 98(420/b)</p>
 	<p>b^3 = 2401b - 41160</p>
 	<p>b^3 - 2401b + 41160 = 0</p>
-	<p>Resolving the cubic, we get at b = -56 (rejected), b = 21 (repeat of original), and b = 35. When b = 35, a = 12.</p>
-	<p>Hence we have triangle with sides 24cm, 37cm, 37cm</p>
-	<br />
-	<h2>factorization of the cubic</h2>
 	<p>The good thing here is, we know that b = 21 (i.e. a = 20) is one of the solutions of the above cubic.</p>
 	<p>Hence, we can factorize the polynomial without going through the need of cubic solving:</p>
-	<p>b^3 - 2401b + 41160 = 0</p>
 	<p>(b - 21)(b^2 + 21b - 1960) = 0</p>
 	<p>(b - 21)(b - 35)(b + 56) = 0</p>
-	<p>b = 21, b = 35, b = -56</p>
+	<p>b = 21 (original), b = 35 (hence a = 12), b = -56 (rejected)</p>
+	<p>Hence the solution here is [24, 37, 37]</p>
 	<br />
 	<h2>the general case</h2>
 	<p>For an isosceles triangle of base 2x cm and height y cm:</p>
 	<h3><u>1. Setting variables</u></h3>
-	<p>Let A = area, so A = xy; let P = perimeter, so P = 2x + 2√(x^2 + y^2)</p>
-	<p>Suppose we have another triangle [2m, √(m^2 + n^2), √(m^2 + n^2)]; m and n are not equal to both x and y.
-	<p>Then we have A = mn and P = 2m + 2√(m^2 + n^2) as well.</p>
+	<p>A = xy and P = 2x + 2√(x^2 + y^2).</p>
+	<p>Suppose we have another triangle [2m, √(m^2 + n^2), √(m^2 + n^2)]. Then we have A = mn and P = 2m + 2√(m^2 + n^2) as well.</p>
 	<h3><u>2. Equations</u></h3>
 	<p>From the above, we have n = A/m and 2√(m^2 + n^2) = P - 2m</p>
 	<p>Rewriting a bit:</p>
@@ -66,16 +60,17 @@
 	<p>Alternately, one can derive a cubic in terms of n and use n = y to simplify it as well.</p>
 	<br />
 	<h2>another example</h2>
-	<p>Suppose we have x = 33, y = 56 (√(x^2 + y^2) = √(33^2 + 56^2) = 65.) This gets us a triangle of [66, 65, 65] (very close to being equilateral, lol.), where A = 33x56 = 1848, P = 66 + 65 + 65 = 196.</p>
+	<p>Suppose we have x = 33, y = 56 (√(x^2 + y^2) = √(33^2 + 56^2) = 65.) 
+		This gets us a triangle of [66, 65, 65], where A = 33x56 = 1848, P = 66 + 65 + 65 = 196.</p>
 	<p>Making the substitutions:</p>
 	<p>4(196)(m^3) - (196)^2(m^2) + 4(1848)^2 = 0</p>
 	<p>196m^3 - 9604m^2 + 1848^2 = 0</p>
 	<p>m^3 - 49m^2 + 17424 = 0</p>
-	<p>Since we know that m = 33 is a root, we can directly simplify it as (m - 33)(m^2 - 16m - 528) = 0</p>
-	<p>However, m = 33 is the only integral root, meaning that for this particular area and perimeter, (66, 65, 65) is the only isosceles triangle with integral side lengths.</p>
+	<p>(m - 33)(m^2 - 16m - 528) = 0</p>
+	<p>m = 33 is the only integral root here, meaning that for this particular area and perimeter, (66, 65, 65) is the only isosceles triangle with integral side lengths.</p>
 	<br />
 	<h2>a special case of irrational area and perimeter</h2>
-	<p>In fact, y can actually be a non-integer, since y isn't a side in the original isosceles.</p>
+	<p>In fact, y can be a non-integer, since y isn't a side in the original isosceles.</p>
 	<p>e.g. for x = 2 and y = 3√13 (√(x^2 + y^2) = 11):</p>
 	<p>A = 2(3√13) = 6√13, and P = 4 + 11 + 11 = 26</p>
 	<p>Suppose another triangle 2m, √(m^2 + n^2), √(m^2 + n^2) has the same area and perimeter as above.</p>
@@ -83,18 +78,19 @@
 	<p>4(26)m^3 - (26^2)m^2 + 4(6√13)^2 = 0</p>
 	<p>104m^3 - 676m^2 + 1872 = 0</p>
 	<p>2m^3 - 13m^2 + 36 = 0</p>
-	<p>Since m = 2 is a root, this is simplified to (m - 2)(2m^2 - 9m - 18) = 0, giving us (m - 2)(2m + 3)(m - 6) = 0</p>
+	<p>(m - 2)(2m^2 - 9m - 18) = 0</p>
+	<p>(m - 2)(2m + 3)(m - 6) = 0</p>
 	<p>We get m = 2 (original), m = -1.5 (rejected), or m = 6.</p>
-	<p>In the case of m = 6, n = √13, and √(m^2 + n^2) = √(36 + 13) = 7. Hence [7, 7, 12] triangle actually has the same area and perimeter as a [11, 11, 4] triangle.</p>
+	<p>In the case of m = 6, n = √13, and √(m^2 + n^2) = √(36 + 13) = 7. 
+		Hence [7, 7, 12] triangle actually has the same area and perimeter as a [11, 11, 4] triangle.</p>
 	<br />
 	<h2>generation of differences of squares and pythagorean triples</h2>	
-	<p>Using the above example, suppose the angle between the 2 sides of 7 is θ, and the angle between the 2 sides of 11 is φ</p>
-	<p>By the sine area theorem, we know that A = 49sinθ/2 = 121sinφ/2
-	<p>Also, cosθ = (49 + 49 - 144)/(2*7*7) = -23/49 and cosφ = (121 + 121 - 16)/(2*11*11) = 113/121 </p>
-	<p>Consequently, 1 - (cosθ)^2 = 1 - (-23/49)^2 = 1872/2401, and 1 - (cosφ)^2 = 1 - (113/121)^2 = 1872/14641. Notice how <b>1872</b> is the numerator of both fractions. In fact:</p>
-	<p>A^2 = 2401((sinθ)^2)/4 = 2401(1 - (cosθ)^2)/4 = 2401(1872)/(4)(2401) = 468</p>
-	<p>At the same time, A^2 = 14641((sinφ)^2)/4 = 14641(1 - (cosφ)^2)/4 = 14641(1872)/(4)(14641) = 468</p>
-	<p>Hence, this particular set of triangles actually also shows that the number 1872 can be expressed in (at least) 2 different ways of the differences of squares, namely <b>1872 = 49^2 - 23^2 = 121^2 - 113^2</b></p>
+	<p>Using the above example, suppose θ is the angle between [7, 7], and φ is the angle between [11, 11]</p>
+	<p>By the sine area theorem, we know that A = 49sinθ/2 = 121sinφ/2.</p>
+	<p>Also, cosθ = (49 + 49 - 144)/(2*7*7) = -23/49 and cosφ = (121 + 121 - 16)/(2*11*11) = 113/121.</p>
+	<p>Consequently, (sinθ)^2 = 1 - (-23/49)^2 = 1872/2401, and (sinφ)^2 = 1 - (113/121)^2 = 1872/14641. Notice how <b>1872</b> is the numerator of both fractions. In fact:</p>
+	<p>A^2 = 2401((sinθ)^2)/4 = 2401(1872)/(4)(2401) = 468. At the same time, A^2 = 14641((sinφ)^2)/4 = 14641(1872)/(4)(14641) = 468 as well.</p>
+	<p>Hence, this particular set of triangles actually also shows that the number 1872 can be expressed in (at least) 2 different ways of the differences of squares, namely <b>1872 = 49^2 - 23^2 = 121^2 - 113^2</b>.</p>
 	<p>In the case of a square number, we will end up generating a Pythagorean triple.</p>
 	<br />
 	<h4>silikade, 2025</h4>

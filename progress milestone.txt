@@ -1,20 +1,26 @@
-Progress:
+2025 Progress
+
 March 16:
-Milestone 0 (very early testing): creation of page, implementation of style and font
-Milestone 1(.0): Spelling reform
+- Milestone 0 (very early testing): creation of page, implementation of style and font
+- Milestone 1.0: Spelling reform
 March 17:
-Milestone 1.1: Explanation of spelling reform
-Milestone 1.2, 1.3: Cooked English and catalogue of ESRs found on internet
+- Milestone 1.1: Explanation of spelling reform
+- Milestone 1.2, 1.3: Cooked English and catalogue of ESRs found on internet
 March 18:
-Milestone 2.0: creation of interchange system
-Milestone 2.1: hidden sounds + folder structure established
-Milestone 2.2: setting down what to include in the webpage
+- Milestone 2.0: creation of interchange system
+- Milestone 2.1: hidden sounds + folder structure established
+- Milestone 2.2: setting down what to include in the webpage
 March 21:
-Milestone 2.3: reduced some goals, finished bases
-Milestone 2.4: finished the rest of math work
+- Milestone 2.3: reduced some goals, finished bases
+- Milestone 2.4: finished the rest of math work
 March 22:
-Beta 1: Chemistry cooking + postponed fantasy section to another update in April, since I do not have time.
-Beta 2: Full chemistry completion, so the site is ready to post.
+- Beta 1: Chemistry cooking + postponed fantasy section to another update in April, since I do not have time.
+- Beta 2: Full chemistry completion, so the site is ready to post.
 March 23:
-Pre-release 1: site fixes and simplification of text
-Pre-release 2: more simplifications
+- Pre-release 1: site fixes and simplification of text
+- Pre-release 2: more simplifications
+April 1:
+- Release 1.0: official launch of website
+September 26:
+- Release Memoranda: finalize sections for 2025: Chemistry, Math, English Reform. Fantasy category is cancelled.
+- Release 1.1: cleaning up some descriptions

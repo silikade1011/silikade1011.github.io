@@ -14,56 +14,55 @@
 	<p><a href="redirectNUM.html">back to interchange</a> &nbsp;&nbsp;&nbsp;<a href="../index.html">main page</a></p>
 	<br />
 	<h2>what is a base?</h2>
-	<p>A number base (or, a radix) is a system in which unique digits (including 0) are used to represent numbers.</p>
-	<p>For a particular base X (X is in decimal), we use the digits (numbers) 0 to (X-1), and if X > 9 we may also use letters.</p>
+	<p>A number base (or, a radix) is a system in which unique digits are used to represent numbers.</p>
+	<p>For a particular base X (X in decimal for now), we use the digits 0 to (X-1), and if X > 9 we may also use letters.</p>
 	<p>Usually we only talk about bases of positive integers because those get used more often, though theoretically we can make a base out of any number.</p>
 	<br />
 	<h2>the more common examples</h2>
 	<p>There are many examples of bases in daily life, some of which we may not even realize that we're using.</p>
-	<p>For example, the simplest of all is <b>base 10</b>, aka decimal, where we use the digits 0-9 to represent every single number. And when we refer to a number of something, usually it's in base 10, unless, say, we're trying to make the "1+1=10" pun.</p>
-	<p>In that case, the base used here is <b>base 2</b>, also known as binary. Here we only have 0 and 1 to use. Though because of its simplicity in digit usage, it becomes very easy to code stuff and represent numbers using binary.</p>
-	<p>Another 2 bases that we use subconsciously are base 24 and base 60, used to represent hours and minutes/seconds of a day respectively. Base 60 is also used by some ancient peoples to record numbers, and even fractions.</p>
-	<p>You may have also heard of base 16, which is hexadecimal. It utilizes 0-9, and usually the letters A to F to represent 10 to 15.</p>
-	<p>Though of course, we are not limited to these numbers for bases. In fact, they have many properties.</p>
+	<p>For example, the simplest of all is <b>base 10</b>, aka decimal, where we use the digits 0-9 to represent every single number. And when we refer to a number of something, usually it's in base 10.</p>
+	<p>Another commonly used base is <b>base 2</b>, also known as binary. Here we only use 0 and 1 to use, though this restriction allows for many operations, such as gate representations.</p>
+	<p>Furthermore, we use base 24 and base 60 subconsciously, as hours and minutes/seconds of a day respectively. Base 60 is also used by some ancient peoples to record numbers, and even fractions.</p>
+	<p>You may have also heard of base 16 (hexadecimal). It utilizes 0-9, and the letters A to F to represent 10 to 15.</p>
+	<p>All of that set up, it's important to state that: we are not limited to these numbers for bases.</p>
 	<br />
 	<h2>changing from one base to another</h2>
 	<p>Changing from one base to another is as easy is converting the number in the base to base 10, then back to that base. However, we must also know how base notation works.</p>
-	<p>For any base N, the first digit before the decimal point represent 1s (i.e. N to the power of 0), then leftward we have Ns, (N^2)s, (N^3)s and so on. As for digits after the point, we have 1/N, 1/(N^2), 1/(N^3), and so forth. </p>
-	<p>Let's take the number 4235.06 in base 7 as an example. Yes I know, it is a fairly odd base, but the common bases are kinda overused.</p>
-	<p>In base 7, the digits 0 to 6 are used. This number can thus be represented in base 10 as 4*(7^3) + 2*(7^2) + 3*7 + 5 + 0*(1/7) + 6*(1/(7^2)) = 1372 + 98 + 21 + 5 + 0 + 6/49 = 1496 + 6/49.</p>
+	<p>For any base N, the first digit before the decimal point represent 1s (i.e. N⁰), then leftward we have Ns, (N²)s, (N³)s and so on. As for digits after the point, we have 1/N, 1/(N²), 1/(N³), and so forth. </p>
+	<p>Let's take the number 4235.06 in base 7 as an example. Yes I know, a fairly odd base, but the common bases are kinda overused.</p>
+	<p>In base 7, the digits 0 to 6 are used. This number can thus be represented in base 10 as 4*(7³) + 2*(7²) + 3*7 + 5 + 0*(1/7) + 6*(1/(7²)) = 1372 + 98 + 21 + 5 + 0 + 6/49 = 1496 + 6/49.</p>
 	<p>Though converting an integer to a base is easy work (it is as simple as dividing that number by the base to the power of whatever biggest number we can do, then going downwards as we find remainders), convering fractions (or even irrational numbers) is a bit more difficult, but still doable.</p>
 	<p>For example, we want to convert 0.25 = 1/4 (in base 10) into base 3. Obviously, 3 is not a factor of 4, so this will take some work.</p>
-	<p>However, the method remains the same. 1/4 is smaller than 1/3, so we start at 1/9, which gets us 1/36 as it contains 2 1/9s. This, in turn, contains 2/81s, leaving us with 1/324.</p>
+	<p>1/4 is smaller than 1/3, so we start at 1/9, which gets us 1/36 as it contains 2 1/9s. This, in turn, contains 2/81s, leaving us with 1/324.</p>
 	<p>Fortunately, this conversion does not get much more complicated because it becomes a repeating string of digits: 0.02020202... (or, we can just go the simpler route and express it as 1/11 in ternary, but that's less interesting.)</p>
 	<br />
 	<h2>unusual bases</h2>
 	<p>So, now that we have explained how bases work, let's explore some weird bases. Remember, any number (even if its transcendental or complex) can be a base.</p>
-	<p>Though as a sidenote, usually when we use these bases, we take digits up to the floor function of that number, which is essentially its integral part. Though that has its limitations.</p>
+	<p>Though as a sidenote, usually when we use these bases, we take digits up to the floor function of that number, which is essentially its integral part.</p>
 	<br />
-	<h3><u>1. π, pi</u></h3>
-	<p>Obviously we gotta talk about pi. Now, it isn't actually very useful to express regular numbers in pi as there's probably no way we can do this without everything being a mess, but since pi is related to circles we can still do a lot of things.</p>
-	<p>For example, a circle of radius 1 in base pi has an area of 10 in base pi, and a circle of radius 2 has, uhh..., an area of 40 in base pi? See, this is the first limitation with expressing bases like these; 4 is larger than pi, so intuitively we can't use it as a digit, but c'mon, are we going to express it as 3π in base pi? Additionally, 4*pi itself is larger than (pi^2), so how do we represent this "4pi - (pi^2)" thing after we take 1 pi^2?</p>
-	<p>Regardless, this is a fun base to think of, though I'd honestly rather treat pi (and others such as e) as a funny variable with a predetermined value instead if I want to express it, since it acts like an unlike term with rational numbers anyway.</p>
-	<h3><u>2. φ, phi, aka the golden ratio</u></h3>
-	<p>This is a bit weirder since phi has this property where 1 + phi = (phi)^2. Consequently, some numbers have multiple representations, which is the second limitation of using these bases.</p>
-	<p>For example, phi^2 itself can be represented as 100 base phi, or 11 base phi, and both would be valid representations since phi is between 1 and 2.</p>
-	<p>A similar phenomenon to this is the <b>Fibonacci "base"</b> (though it's not really a base in the traditional sense. We use 1, 1, 2, 3, etc. as our place values instead.), which also shares the digit shifting properties. In general though, the string "11" is usually avoided as 11 = 100 in both phi and Fibonacci notation.</p>
+	<h3><u>1. π</u></h3>
+	<p>Obviously we gotta talk about π. Now, it isn't actually very useful to express regular numbers in π as there's probably no way we can do this without everything being a mess, but since π is related to circles we can still do a lot of things.</p>
+	<p>For example, a circle of radius 1 in base π has an area of 10 in base π, and a circle of radius 2 has, uhh..., an area of 40 in base π? See, this is the first limitation with expressing bases like these; 4 is larger than π, so intuitively we can't use it as a digit, but c'mon, are we going to express it as 3π in base π? Additionally, 4π itself is larger than π², so how do we represent this "4π - π²" thing after we take 1 π² off?</p>
+	<p>Regardless, this is a fun base to think of, though I'd honestly rather treat π (and others such as e) as a funny variable with a predetermined value instead if I want to express it, since it acts like an unlike term with rational numbers anyway.</p>
+	<h3><u>2. φ, the golden ratio</u></h3>
+	<p>This is a bit weirder since φ has this property where 1 + φ = φ². Consequently, some numbers have multiple representations, which is the second limitation of using these bases.</p>
+	<p>For example, φ² itself can be represented as 100 base φ, or 11 base φ, and both would be valid representations since φ is between 1 and 2.</p>
+	<p>A similar phenomenon to this is the <b>Fibonacci "base"</b> (though it's not really a base in the traditional sense. We use 1, 1, 2, 3, etc. as our place values instead.), which also shares the digit shifting properties. In general though, the string "11" is usually avoided as 11 = 100 in both φ and Fibonacci notation.</p>
 	<h3><u>3. Negative bases</u></h3>
-	<p>Here comes the third boss. Occasionally we may refer to these bases by their name (e.g. binary) then adding the prefix nega- (no, not the N word) to it (e.g. negabinary).</p>
-	<p>The good thing about these bases is that, since they are still integer bases it doesn't come with the ramifications of dual representations. In these bases, we use the same digits as its positive counterpart.</p>
-	<p>These bases also come with the property of that it multiplying itself even times is equal to its positive counterpart multiply itself even times, so some representations of numbers can be the same, e.g. 20 = 10100 in both base 2 and base -2. Converting a positive base to a negative base is slightly more complicated, but nevertheless possible.</p>
-	<p>For example, if we want to represent 24 (base 10) in base -7, then all we have to do is to first find the smallest (even) index of that number that is larger than 24, in this case 49. This leaves us with -25, which can be expressed as 4(-7)+3 (not 3(-7)+(-4); in this case we want to find the largest multiple of -7 that is smaller than -25, which is -28.) Hence, the result is 143 in base -7.</p>
+	<p>Occasionally we may refer to these bases by their name (e.g. binary) then adding the prefix nega- (no, not the N word) to it (e.g. negabinary).</p>
+	<p>The cool thing about these bases is that, since they are still integer bases it doesn't come with the ramifications of dual representations. In these bases, we use the same digits as its positive counterpart.</p>
+	<p>Additionally, multiplying a negative number by itself an even amount of times is equal to  multiplying its positive counterpart by itself the same way, so some representations of numbers can be the same, e.g. 20 = 10100 in both base 2 and base -2. Converting a positive base to a negative base is slightly more complicated, but nevertheless possible.</p>
+	<p>For example, to represent 24 (base 10) in base -7, all we have to do is to first find the smallest (even) index of that number that is larger than 24, in this case 49. This leaves us with -25, which can be expressed as 4(-7)+3 (not 3(-7)+(-4); in this case we want to find the largest multiple of -7 that is smaller than -25, which is -28.) Hence, the result is 143 in base -7.</p>
 	<h3><u>4. Balanced bases</u></h3>
-	<p>This is the third brother of the integer base series, except we use negative integers directly as digits. We would use all integers from the range of -N/2 to N/2 (floored), including 0, hence the term balanced.</p>
-	<p>Though in practice, only balanced ternary (base 3) gets attention because it's just -1, 0 and 1. Some people also represent -1 as T, just to make things simpler.</p>
-	<p>Converting base 10 to balanced ternary works a bit like negative bases, except this time it's the digits doing the work. For example, 24 = 27-3 = (3^3)+(-1)*3 = 10T0 (bal3).</p>
+	<p>Another one in integer base series, except we use negative integers directly as digits. We would use all integers from the range of -N/2 to N/2 (floored), including 0, hence the term balanced.</p>
+	<p>Though in practice, only balanced ternary (derived from base 3) gets attention because it's just -1, 0 and 1. Writing "-1" isn't feasible, so it gets represented with T.</p>
+	<p>Converting base 10 to balanced ternary works a bit like negative bases, except this time it's the digits doing the work. For example, 24 = 27-3 = (3³) + 3(-1) = 10T0 (bal3).</p>
 	<p>Personally, I like balanced ternary very much as it is very simple and fun to mess with, and it's got a -1 in it.</p>
 	<h3><u>5. Complex bases</u></h3>
-	<p>Finally we reach the land of the complex numbers. Things get quite complicated in here, simply because imaginary numbers exist now.</p>
-	<p>For example, if we want to convert 2 into base (1+i), then we have to consider how to factorize 2. Thankfully, 2 = (1+i)(1-i) = (1+i) + (1-i), but of course we're not quite there yet.</p>
-	<p>Thankfully, that equality above is what we need, as we can write it as (1-i) = 2/(1+i), so 2 = (1+i) + 2/(1+i), making it 102 base (1+i).</p>
-	<p>But of course, this isn't a perfect representation as 2 is larger than 1, the real part of the complex number. And of course, there isn't an easy way out of the conversion mechanisms either.</p>
-	<p>We will have to at least consider conjugations (a+bi and a-bi) and their products to realistically have a functioning base.</p>
+	<p>Finally we reach the land of the complex numbers. Things get quite complicated in here.</p>
+	<p>For example, if we want to convert 2 into base (1+i), then we have to consider how to factorize 2. Thankfully, 2 = (1+i)(1-i) = (1+i) + (1-i), so through (1-i) = 2/(1+i) we get 2 = (1+i) + 2/(1+i). Hence, 2 (base 10) = 102 in base (1+i).</p>
+	<p>Despite this miracle, it isn't a perfect representation as 2 is larger than 1, the real part of the complex number.</p>
+	<p>For most cases, we will have to at least consider conjugations (a+bi and a-bi) and their products to realistically have a functioning base.</p>
 	<h3><u>Honorable mentions</u></h3>
 	<p>Fractional, root and pure imaginary bases deserve a mention here. However, they are merely integer base numbers in disguise most of the time:</p>
 	<p>a. base 1/N is simply an inversion of base N.</p>

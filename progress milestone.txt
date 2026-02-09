@@ -24,3 +24,6 @@ April 1:
 September 26:
 - Release Memoranda: finalize sections for 2025: Chemistry, Math, English Reform. Fantasy category is cancelled.
 - Release 1.1: cleaning up some descriptions (1.1.1: font hotfix)
+
+2026 Progress
+- February 8-9: English Spelling Reform update. probably the last update to this website.
